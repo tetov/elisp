@@ -1,0 +1,3 @@
+[submodule "org-pocket"]
+	path = org-pocket
+	url = https://github.com/alphapapa/org-pocket.git
