@@ -44,6 +44,7 @@
 (require 'org-checklist)
 (require 'org-clock)
 (require 'org-crypt)
+(require 'org-habit)
 (require 'org-id)
 (require 'org-mime)
 (require 'org-protocol)
