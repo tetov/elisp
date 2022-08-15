@@ -1147,13 +1147,13 @@ Skip project and sub-project tasks, habits, and loose non-project tasks."
 (defvar bh/plantuml-if-count 0)
 
 (defun bh/plantuml-if ()
-  (incf bh/plantuml-if-count)
+  (cl-incf bh/plantuml-if-count)
   (number-to-string bh/plantuml-if-count))
 
 (defvar bh/plantuml-loop-count 0)
 
 (defun bh/plantuml-loop ()
-  (incf bh/plantuml-loop-count)
+  (cl-incf bh/plantuml-loop-count)
   (number-to-string bh/plantuml-loop-count))
 
 (defun bh/plantuml-reset-counters ()
