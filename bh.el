@@ -356,19 +356,6 @@ Switch projects and subprojects from NEXT back to TODO"
            (bh/is-project-p))
       "TODO"))))
 
-(defun bh/clock-in-to-prog ()
-  "Switch a task from TODO to PROG when clocking in.
-Skips capture tasks, projects, and subprojects.
-Switch projects and subprojects from NEXT back to TODO"
-  (when (not (and (boundp 'org-capture-mode) org-capture-mode))
-    (cond
-     ((and (member (org-get-todo-state) (list "TODO"))
-           (bh/is-task-p))
-      "PROG")
-     ((and (member (org-get-todo-state) (list "PROG"))
-           (bh/is-project-p))
-      "TODO"))))
-
 (defun bh/find-project-task ()
   "Move point to the parent (project) task if any"
   (save-restriction
