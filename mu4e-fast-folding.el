@@ -200,3 +200,5 @@ This is detected by the presence of an overlay with value 'overlay."
 
 (define-key mu4e-headers-mode-map (kbd "<backtab>")
   #'mu4e-fast-folding-thread-toggle-all)
+
+(provide 'mu4e-fast-folding)
